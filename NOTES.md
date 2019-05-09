@@ -34,4 +34,5 @@
 - Not certain on which one to do
 
 - Refactor `beers.map` to its own card/container/detail
+  - Components/BeerDetail to deisplay the details of the Beer
   - something along the lines of `<BeerDetail beer={beer} />`
