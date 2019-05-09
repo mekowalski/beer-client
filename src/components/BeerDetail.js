@@ -1,4 +1,5 @@
 import React from 'react';
+import BeerForm from '../containers/BeerForm';
 
 const BeerDetail = ({ beer }) => {
   return (
@@ -7,6 +8,9 @@ const BeerDetail = ({ beer }) => {
       <p>Brand: {beer.brand}</p>
       <p>Style: {beer.style}</p>
       <p>Alcohol by Volume: {beer.abv}%</p>
+
+      <BeerForm />
+
     </div>
   )
 }

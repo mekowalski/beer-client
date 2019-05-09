@@ -1,6 +1,6 @@
 import React from 'react';
 import BeerDetail from '../components/BeerDetail';
-import BeerForm from './containers/BeerForm';
+import BeerForm from './BeerForm';
 
 class Beers extends React.Component {
 
@@ -9,10 +9,8 @@ class Beers extends React.Component {
       <div>
         <h1>Beer List</h1>
         {this.props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
-      </div>
 
-      <div>
-        <BeerForm />
+        // <BeerForm />
       </div>
     )
   }
