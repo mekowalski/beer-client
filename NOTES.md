@@ -47,3 +47,10 @@
 - Beers: create form functionality => <BeerForm />
   - [] create `BeerForm` and export/import into Beers
   - this will actually contain `connect()` with redux store
+
+- BEGIN REDUX
+- Have a Store that the App can access data from, this will have all the App's State in one central area
+- Instead of having different state in different areas, which I currently have with `App.js`
+- Store will have collection of Beers {...beers}
+- Store will also have a State of BeerFromData {beer attributes: name, brand, style, abv}
+- Store will have current Beer(selected, /api/beers/:id)

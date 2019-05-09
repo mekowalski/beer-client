@@ -10,7 +10,7 @@ class Beers extends React.Component {
         <h1>Beer List</h1>
         {this.props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
 
-        // <BeerForm />
+        <BeerForm />
       </div>
     )
   }
