@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Beers = () => {
+const Beers = (props) => {
   return (
     <div>
-      Beers List here
+      {props.beers.map(beer => <h1>{beer.name}</h1>)}
     </div>
   )
 }
