@@ -16,7 +16,7 @@ const beers = [
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ textAlign: 'center' }}>
        <Beers beers={beers}/>
       </div>
     )
