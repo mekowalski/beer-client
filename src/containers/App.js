@@ -7,7 +7,14 @@ class App extends React.Component {
     this.state = { beers: [] }
   }
 
+  componentDidMount() {
+    fetch('localhost:3001/api/beers')
+      .then(response => response.json)
+      .then(beers => this.setState({ beers }))
+  }
+
   render() {
+    console.log(this.state)
     return (
       <div style={{ textAlign: 'center' }}>
        <Beers beers={this.state.beers}/>
