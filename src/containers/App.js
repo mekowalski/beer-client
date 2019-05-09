@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Welcome to the Beer App!!!
+       <Beers />
       </div>
     )
   }
