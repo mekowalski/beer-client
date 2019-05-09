@@ -32,3 +32,6 @@
 - Do i need to create a separate `apis/railsURL` folder/file to separate the url?
 - Or would I instead create a `.env` file to hold the API_URL?
 - Not certain on which one to do
+
+- Refactor `beers.map` to its own card/container/detail
+  - something along the lines of `<BeerDetail beer={beer} />`
