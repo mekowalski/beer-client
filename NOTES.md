@@ -14,3 +14,4 @@
 
   - current issue is `App.js:11 Fetch API cannot load localhost:3001/api/beers. URL scheme must be "http" or "https" for CORS request.`
   - maybe i need `http` or `https` and can't just use localhost
+  - YESSSS alright, forgot to call `json` with its `()` and was able to successfully get all the fake beer data

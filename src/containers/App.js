@@ -4,12 +4,13 @@ import Beers from './Beers';
 class App extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = { beers: [] }
   }
 
   componentDidMount() {
-    fetch('localhost:3001/api/beers')
-      .then(response => response.json)
+    fetch('http://localhost:3001/api/beers')
+      .then(response => response.json())
       .then(beers => this.setState({ beers }))
   }
 
