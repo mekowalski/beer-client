@@ -26,6 +26,10 @@
 - Components
   1. Beers: Renders the list of Beers with name only
   2. BeerDetail: Render the Beer details of name, brand, style and abv
+  3. App: will render both Beer and BeerDetail dependent on the selection of a beer
+    - first there will be a list on the left side with just beer names
+    - second there will be a select button next to each beer name
+    - third a beer can be selected and this will then display BeerDetail on the right side
 
 
 ## Continue thoughts/notes
@@ -33,6 +37,6 @@
 - Or would I instead create a `.env` file to hold the API_URL?
 - Not certain on which one to do
 
-- Refactor `beers.map` to its own card/container/detail
+- [] Refactor `beers.map` to its own card/container/detail
   - Components/BeerDetail to deisplay the details of the Beer
   - something along the lines of `<BeerDetail beer={beer} />`
