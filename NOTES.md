@@ -7,7 +7,7 @@
 - I've done this probably 4-5 separate times!!!
 
 - GOTTA MAKE API REQUEST
-  - [] constructor with props
+  - [x] constructor with props (not sure if i'll need constructor)
   - [] give state, beers: [] (default)
   - [] build lifecycle call (fetch request to localhost:3001, which would come from actions )
     - response return json and return list of beers, which is where i can setState
