@@ -11,7 +11,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div style={{ textAlign: 'center' }}>
        <Beers beers={this.state.beers}/>

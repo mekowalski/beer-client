@@ -37,6 +37,10 @@
 - Or would I instead create a `.env` file to hold the API_URL?
 - Not certain on which one to do
 
-- [] Refactor `beers.map` to its own card/container/detail
+- [x] Refactor `beers.map` to its own card/container/detail
   - Components/BeerDetail to deisplay the details of the Beer
   - something along the lines of `<BeerDetail beer={beer} />`
+
+- COMPONENTS and STATE
+- Beers: should have some State, this will help with beer selection, anytime the button is clicked, update the Redux Store
+- Beers: will have a connect() function
