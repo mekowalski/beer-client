@@ -54,3 +54,11 @@
 - Store will have collection of Beers {...beers}
 - Store will also have a State of BeerFromData {beer attributes: name, brand, style, abv}
 - Store will have current Beer(selected, /api/beers/:id)
+
+
+- App Setup/Structure Ideas
+- Actions: would hold the action creators with functionality to make requests to external API
+- Apis: this file would hold the baseURL of the Rails API(could i use axios?)
+- Reducers: i would hold an `index.js` file that uses `combineReducers`. this would also hols other reducers for fetching beers or other context i need for the app
+- Components: mainly used to hold components that aren't smart, they just display content
+- Containers: these would hold components that need to actually use and manage State and Data
