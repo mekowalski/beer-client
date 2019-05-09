@@ -26,3 +26,9 @@
 - Components
   1. Beers: Renders the list of Beers with name only
   2. BeerDetail: Render the Beer details of name, brand, style and abv
+
+
+## Continue thoughts/notes
+- Do i need to create a separate `apis/railsURL` folder/file to separate the url?
+- Or would I instead create a `.env` file to hold the API_URL?
+- Not certain on which one to do
