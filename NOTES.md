@@ -43,4 +43,7 @@
 
 - COMPONENTS and STATE
 - Beers: should have some State, this will help with beer selection, anytime the button is clicked, update the Redux Store
-- Beers: will have a connect() function
+<!-- - Beers: will have a connect() function -->
+- Beers: create form functionality => <BeerForm />
+  - [] create `BeerForm` and export/import into Beers
+  - this will actually contain `connect()` with redux store
