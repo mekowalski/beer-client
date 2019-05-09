@@ -1,4 +1,5 @@
 import React from 'react';
+import BeerDetail from '../components/BeerDetail';
 
 const Beers = (props) => {
   return (
