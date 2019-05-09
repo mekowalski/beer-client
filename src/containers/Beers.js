@@ -5,7 +5,7 @@ const Beers = (props) => {
   return (
     <div>
       <h1>Beer List</h1>
-      {props.beers.map(beer => <BeerDetail beer={beer} />)}
+      {props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
     </div>
   )
 }
