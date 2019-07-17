@@ -38,7 +38,7 @@
 - Not certain on which one to do
 
 - [x] Refactor `beers.map` to its own card/container/detail
-  - Components/BeerDetail to deisplay the details of the Beer
+  - Components/BeerDetail to display the details of the Beer
   - something along the lines of `<BeerDetail beer={beer} />`
 
 - COMPONENTS and STATE
@@ -62,3 +62,13 @@
 - Reducers: i would hold an `index.js` file that uses `combineReducers`. this would also hols other reducers for fetching beers or other context i need for the app
 - Components: mainly used to hold components that aren't smart, they just display content
 - Containers: these would hold components that need to actually use and manage State and Data
+
+
+### Tree Structure
+- not sure if i should have separate folders such as `components`, `reducers`, `actions`, etc
+- should i also have a sub-folder for the REST pages such as:
+  - `BeerCreate` form
+  - `BeerUpdate` form
+  - `BeerShow` page
+  - `BeerDelete` page
+- currently i have a beer SHOW page(that isn't working yet) and a beer INDEX page (struggling with format)
