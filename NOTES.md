@@ -66,6 +66,8 @@
 
 ### Tree Structure
 - not sure if i should have separate folders such as `components`, `reducers`, `actions`, etc
+  - maybe `store.js` should be inside a `reducers` folder??? don't know
+  - also so used to having `App.js` inside the `components` folder, this is all preference
 - should i also have a sub-folder for the REST pages such as:
   - `BeerCreate` form
   - `BeerUpdate` form
