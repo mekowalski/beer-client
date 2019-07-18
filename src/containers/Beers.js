@@ -9,7 +9,10 @@ class Beers extends React.Component {
     return (
       <div>
         <h1>Beer List</h1>
-        {this.props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
+        {this.props.beers.map(beer => {
+          return <a href={`/beers/${beer.id}`}>{beer.name}</a>
+        })}
+
 
         <BeerForm />
       </div>
@@ -18,3 +21,4 @@ class Beers extends React.Component {
 }
 
 export default Beers
+//  {this.props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
