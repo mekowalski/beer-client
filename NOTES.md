@@ -80,7 +80,7 @@
 - right now, the SHOW page isn't working, only the INDEX page is working
 - is it because i don't have any buttons? i'm just typing in the direct url???
 
-1. Remove the detail from the index page, only render the beer title.
-2. Make the beer title a lik to /beers/id
-3. have the application respond to that request adn fetch the beer jsonn by id
-4. use that json to render the appropriate beer detail
+1. Remove the detail from the index page, only render the beer title
+2. Make the beer title a link to /beers/id
+3. Have the application respond to that request and fetch the beer json by id
+4. Use that json to render the appropriate beer detail
