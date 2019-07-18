@@ -32,6 +32,17 @@
     - third a beer can be selected and this will then display BeerDetail on the right side
 
 
+### Tree Structure
+- not sure if i should have separate folders such as `components`, `reducers`, `actions`, etc
+- maybe `store.js` should be inside a `reducers` folder??? don't know
+- also so used to having `App.js` inside the `components` folder, this is all preference
+- should i also have a sub-folder for the REST pages such as:
+- `BeerCreate` form
+- `BeerUpdate` form
+- `BeerShow` page
+- `BeerDelete` page
+
+
 ## Continue thoughts/notes
 - Do i need to create a separate `apis/railsURL` folder/file to separate the url?
 - Or would I instead create a `.env` file to hold the API_URL?
@@ -64,16 +75,12 @@
 - Containers: these would hold components that need to actually use and manage State and Data
 
 
-### Tree Structure
-- not sure if i should have separate folders such as `components`, `reducers`, `actions`, etc
-  - maybe `store.js` should be inside a `reducers` folder??? don't know
-  - also so used to having `App.js` inside the `components` folder, this is all preference
-- should i also have a sub-folder for the REST pages such as:
-  - `BeerCreate` form
-  - `BeerUpdate` form
-  - `BeerShow` page
-  - `BeerDelete` page
 - currently i have a beer SHOW page(that isn't working yet) and a beer INDEX page (struggling with format)
 
 - right now, the SHOW page isn't working, only the INDEX page is working
 - is it because i don't have any buttons? i'm just typing in the direct url???
+
+1. Remove the detail from the index page, only render the beer title.
+2. Make the beer title a lik to /beers/id
+3. have the application respond to that request adn fetch the beer jsonn by id
+4. use that json to render the appropriate beer detail
