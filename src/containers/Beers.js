@@ -5,6 +5,7 @@ import BeerForm from './BeerForm';
 class Beers extends React.Component {
 
   render() {
+    console.log('what about here')
     return (
       <div>
         <h1>Beer List</h1>

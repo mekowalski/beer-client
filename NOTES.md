@@ -59,7 +59,7 @@
 - App Setup/Structure Ideas
 - Actions: would hold the action creators with functionality to make requests to external API
 - Apis: this file would hold the baseURL of the Rails API(could i use axios?)
-- Reducers: i would hold an `index.js` file that uses `combineReducers`. this would also hols other reducers for fetching beers or other context i need for the app
+- Reducers: i would hold an `index.js` file that uses `combineReducers`. this would also hold other reducers for fetching beers or other context i need for the app
 - Components: mainly used to hold components that aren't smart, they just display content
 - Containers: these would hold components that need to actually use and manage State and Data
 
@@ -74,3 +74,6 @@
   - `BeerShow` page
   - `BeerDelete` page
 - currently i have a beer SHOW page(that isn't working yet) and a beer INDEX page (struggling with format)
+
+- right now, the SHOW page isn't working, only the INDEX page is working
+- is it because i don't have any buttons? i'm just typing in the direct url???
