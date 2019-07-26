@@ -21,6 +21,3 @@ class Beers extends React.Component {
 }
 
 export default Beers
-//  {this.props.beers.map(beer => <BeerDetail key={beer.id} beer={beer} />)}
-//technically i don't want to render the entire beer detail, i just need the beer name to use as a link to
-//the beer detail page(router)
