@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 //create reducer for beers
@@ -17,8 +17,9 @@ const reducers = combineReducers({
 
 const middleware = [thunk]
 
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
 export default createStore(
   reducers,
-  applyMiddleware[...middleware],
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeEnhancer(applyMiddleware(...middleware))
 )
