@@ -5,6 +5,8 @@ class BeerForm extends React.Component{
     return (
       <div>
         Fill the form out
+        <form>
+        </form>
       </div>
     )
   }

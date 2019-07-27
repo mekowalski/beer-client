@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import thunk from 'redux';
+import thunk from 'redux-thunk';
 
 //create reducer for beers
 const beersReducer = (state = [], action) => {
