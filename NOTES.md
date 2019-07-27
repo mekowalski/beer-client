@@ -84,3 +84,9 @@
 2. Make the beer title a link to /beers/id
 3. Have the application respond to that request and fetch the beer json by id
 4. Use that json to render the appropriate beer detail
+
+
+- 072719
+- [] need to update `Beers.js` to grab the info from reducers
+- [] also need to install `react-redux` library
+  - redux is a simple library, react-redux will ACTUALLY connect React to Redux
