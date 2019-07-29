@@ -88,5 +88,11 @@
 
 - 072719
 - [] need to update `Beers.js` to grab the info from reducers
-- [] also need to install `react-redux` library
+- [x] also need to install `react-redux` library
   - redux is a simple library, react-redux will ACTUALLY connect React to Redux
+
+
+- 072919
+- `App.js` originally has information on the Beers, but that should no longer be its functionality
+- Entire App is now wrapped in Provider, want to connect to actual State of Beer component
+- [] import `connect` in Beers

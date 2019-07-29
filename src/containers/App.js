@@ -7,7 +7,7 @@ class App extends React.Component {
   componentDidMount() {
     fetch('http://localhost:3001/api/beers')
       .then(response => response.json())
-      .then(beers => this.setState({ beers }))
+      // .then(beers => this.setState({ beers }))
   }
 
   render() {
