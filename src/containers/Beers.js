@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 // import BeerDetail from '../components/BeerDetail';
 import BeerForm from './BeerForm';
 
@@ -20,4 +22,11 @@ class Beers extends React.Component {
   }
 }
 
-export default Beers
+//mapStateToProps here!
+const mapStateToProps = (state) => {
+  return ({
+    beers: state.beers
+  })
+}
+
+export default connect(mapStateToProps)(Beers)
