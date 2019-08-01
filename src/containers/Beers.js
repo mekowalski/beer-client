@@ -5,6 +5,13 @@ import { connect } from 'react-redux';
 import BeerForm from './BeerForm';
 
 class Beers extends React.Component {
+  //dispatch function with type FETCH_BEERS
+  componentDidMount() {
+    this.props.dispatch({
+      type: 'FETCH_BEERS',
+      beers: [{name: 'testing', brand: 'FAKE', style: 'phony', abv: 3.9}]
+    })
+  }
 
   render() {
     console.log('what about here')

@@ -95,6 +95,10 @@
 - 072919
 - `App.js` originally has information on the Beers, but that should no longer be its functionality
 - Entire App is now wrapped in Provider, want to connect to actual State of Beer component
-- [] import `connect` in Beers
+- [x] import `connect` in Beers
 - Beers already has props that can be passed down, grab State and pass it to the props
   - eg: `this.props.beers`
+
+
+080119
+- State is now coming from Redux, currently with hard-coded fake data
