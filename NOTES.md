@@ -104,7 +104,7 @@
 - State is now coming from Redux, currently with hard-coded fake data
 - Ideally make async call to back in via `componentDidMount()`
 - [x] reducers folder
-- [] connect to backend
+- [x] connect to backend
   - New `actions` DIR, hold the action creators
   - Have reducer with beers and action with beers
   1. i have called `getBeers` in `mapStateToProps()`
@@ -115,3 +115,4 @@
 - Was able to fix issue with dispatch not returning index of beers from API
 
 - [x] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
+- [] Need to connect BeerForm to react-redux AND mapStateToProps()

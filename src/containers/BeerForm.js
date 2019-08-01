@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 class BeerForm extends React.Component{
   render() {
@@ -11,4 +12,12 @@ class BeerForm extends React.Component{
     )
   }
 }
-export default BeerForm
+
+//mapStateToProps here
+const mapStateToProps = state => {
+  return {
+    beerFormData: state.beerFormData
+  }
+}
+
+export default connect(mapStateToProps)(BeerForm)
