@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 // import BeerDetail from '../components/BeerDetail';
 import BeerForm from './BeerForm';
+import { getBeers } from '../actions/beers';
 
 class Beers extends React.Component {
   //dispatch function with type FETCH_BEERS
@@ -38,4 +39,4 @@ const mapStateToProps = (state) => {
   })
 }
 
-export default connect(mapStateToProps)(Beers)
+export default connect(mapStateToProps, { getBeers })(Beers)
