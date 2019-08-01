@@ -5,7 +5,7 @@ export default (state = {
   abv: 0
 },
   action) => {
-    switch(action.type) => {
+    switch(action.type) {
       case 'UPDATE_BEER':
         return action.beerFormData
 

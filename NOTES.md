@@ -114,4 +114,4 @@
 - having current browser error with dispatch line in `actions/beers`
 - Was able to fix issue with dispatch not returning index of beers from API
 
-- [] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
+- [x] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
