@@ -112,3 +112,6 @@
   3. `getBeers` is to make async API call and `dispatch` the beers that have been requested
 
 - having current browser error with dispatch line in `actions/beers`
+- Was able to fix issue with dispatch not returning index of beers from API
+
+- [] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
