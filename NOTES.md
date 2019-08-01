@@ -116,4 +116,8 @@
 
 - [x] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
 - [x] Need to connect BeerForm to react-redux AND mapStateToProps()
-- [] Create the form for BeerForm with input
+- [x] Create the form for BeerForm with input
+- [] Update the form with the data provided (reducers)
+  - add onChange/onSubmit handler in beerFormData
+  - function for handler
+  - right now the handler isn't logging anything

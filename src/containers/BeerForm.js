@@ -2,6 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class BeerForm extends React.Component{
+
+  handleOnChange = (event) => {
+    const { name, value } = event.target
+    console.log(name)
+  }
+
   render() {
     const {name, brand, style, abv} = this.props.beerFormData
 
@@ -11,22 +17,22 @@ class BeerForm extends React.Component{
         <form>
           <div>
             <label htmlFor='name'>Name: </label>
-            <input type='text' name='name' value={name} />
+            <input type='text' onChange={this.handleOnChange} name='name' value={name} />
           </div>
 
           <div>
             <label htmlFor='brand'>Brand: </label>
-            <input type='text' name='brand' value={brand} />
+            <input type='text' onChange={this.handleOnChange} name='brand' value={brand} />
           </div>
 
           <div>
             <label htmlFor='style'>Style: </label>
-            <input type='text' name='style' value={style} />
+            <input type='text' onChange={this.handleOnChange} name='style' value={style} />
           </div>
 
           <div>
             <label htmlFor='abv'>Alcohol by Volume: </label>
-            <input type='number' name='abv' value={abv} />
+            <input type='number' onChange={this.handleOnChange} name='abv' value={abv} />
           </div>
         </form>
       </div>
