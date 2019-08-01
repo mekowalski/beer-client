@@ -115,4 +115,5 @@
 - Was able to fix issue with dispatch not returning index of beers from API
 
 - [x] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
-- [] Need to connect BeerForm to react-redux AND mapStateToProps()
+- [x] Need to connect BeerForm to react-redux AND mapStateToProps()
+- [] Create the form for BeerForm with input
