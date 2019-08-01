@@ -9,17 +9,25 @@ class BeerForm extends React.Component{
       <div>
         Fill the form out
         <form>
-          <label htmlFor='name'>Name: </label>
-          <input type='text' name='name' value={name} />
+          <div>
+            <label htmlFor='name'>Name: </label>
+            <input type='text' name='name' value={name} />
+          </div>
 
-          <label htmlFor='name'>Brand: </label>
-          <input type='text' name='name' value={name} />
+          <div>
+            <label htmlFor='brand'>Brand: </label>
+            <input type='text' name='brand' value={brand} />
+          </div>
 
-          <label htmlFor='name'>Style: </label>
-          <input type='text' name='name' value={name} />
+          <div>
+            <label htmlFor='style'>Style: </label>
+            <input type='text' name='style' value={style} />
+          </div>
 
-          <label htmlFor='name'>Alcohol by Volume: </label>
-          <input type='text' name='name' value={name} />
+          <div>
+            <label htmlFor='abv'>Alcohol by Volume: </label>
+            <input type='number' name='abv' value={abv} />
+          </div>
         </form>
       </div>
     )
