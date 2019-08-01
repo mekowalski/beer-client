@@ -4,10 +4,10 @@ import Beers from './Beers';
 class App extends React.Component {
   state = {beers: []}
 
-  componentDidMount() {
-    //want to actually call this.props.getBeers()
-    this.props.getBeers()
-  }
+  // componentDidMount() {
+  //   //want to actually call this.props.getBeers()
+  //   this.props.getBeers()
+  // }
 
   render() {
     return (

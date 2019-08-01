@@ -9,10 +9,7 @@ class Beers extends React.Component {
   //dispatch function with type FETCH_BEERS
   //dispatch() will send new object to Redux store
   componentDidMount() {
-    this.props.dispatch({
-      type: 'FETCH_BEERS',
-      beers: [{name: 'testing', brand: 'FAKE', style: 'phony', abv: 3.9}]
-    })
+    this.props.getBeers()
   }
 
   render() {

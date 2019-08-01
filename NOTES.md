@@ -110,3 +110,5 @@
   1. i have called `getBeers` in `mapStateToProps()`
   2. created `getBeers` in actions and imported that in Beers component
   3. `getBeers` is to make async API call and `dispatch` the beers that have been requested
+
+- having current browser error with dispatch line in `actions/beers`
