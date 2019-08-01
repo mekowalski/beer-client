@@ -102,3 +102,5 @@
 
 080119
 - State is now coming from Redux, currently with hard-coded fake data
+- Ideally make async call to back in via `componentDidMount()`
+- [] reducers folder

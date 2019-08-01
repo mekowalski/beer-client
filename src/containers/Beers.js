@@ -6,6 +6,7 @@ import BeerForm from './BeerForm';
 
 class Beers extends React.Component {
   //dispatch function with type FETCH_BEERS
+  //dispatch() will send new object to Redux store
   componentDidMount() {
     this.props.dispatch({
       type: 'FETCH_BEERS',
@@ -32,6 +33,7 @@ class Beers extends React.Component {
 //mapStateToProps here!
 const mapStateToProps = (state) => {
   return ({
+    //subscribed to state.beers, when state changes, the change is now present in application
     beers: state.beers
   })
 }

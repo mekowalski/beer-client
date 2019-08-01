@@ -1,18 +1,9 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import thunk from 'redux-thunk';
-
-//create reducer for beers
-const beersReducer = (state = [], action) => {
-  switch (action.type) {
-    case 'FETCH_BEERS':
-      return action.beers
-    default:
-      return state
-  }
-}
+import beers from './reducers/beers';
 
 const reducers = combineReducers({
-  beers: beersReducer
+  beers: beers
 })
 
 const middleware = [thunk]
