@@ -87,7 +87,7 @@
 
 
 - 072719
-- [] need to update `Beers.js` to grab the info from reducers
+- [x] need to update `Beers.js` to grab the info from reducers
 - [x] also need to install `react-redux` library
   - redux is a simple library, react-redux will ACTUALLY connect React to Redux
 
@@ -103,4 +103,7 @@
 080119
 - State is now coming from Redux, currently with hard-coded fake data
 - Ideally make async call to back in via `componentDidMount()`
-- [] reducers folder
+- [x] reducers folder
+- [] connect to backend
+  - New `actions` DIR, hold the action creators
+  - Have reducer with beers and action with beers
