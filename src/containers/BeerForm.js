@@ -5,7 +5,11 @@ class BeerForm extends React.Component{
 
   handleOnChange = (event) => {
     const { name, value } = event.target
-    console.log(name)
+    //call on function to actually update the form with new beer
+    const currentBeer = Object.assign({}, this.props.beerFormData, {
+      [name]: value
+    })
+    this.props.updateBeer(currentBeer)
   }
 
   render() {

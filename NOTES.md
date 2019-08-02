@@ -117,7 +117,10 @@
 - [x] Create reducer for Beer Form Data: create with fromReducer from react-redux? not sure
 - [x] Need to connect BeerForm to react-redux AND mapStateToProps()
 - [x] Create the form for BeerForm with input
+
+
+080219
 - [] Update the form with the data provided (reducers)
   - add onChange/onSubmit handler in beerFormData
   - function for handler
-  - right now the handler isn't logging anything
+  - right now the handler isn't logging anything(handler does log when i type in the input fields)
