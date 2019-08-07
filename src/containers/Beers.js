@@ -16,10 +16,15 @@ class Beers extends React.Component {
     return (
       <div>
         <h1>Beer List</h1>
-        {this.props.beers.map(beer => {
-          return <a href={`/beers/${beer.id}`} key={beer.id}>{beer.name}</a>
-        })}
-
+        <ul style={{ listStyle: 'none' }}>
+          {this.props.beers.map(beer => {
+            return <li> <a href={`/beers/${beer.id}`} key={beer.id}>{beer.name}</a></li>
+          })}
+        </ul>
+        {
+          //this is better but still not ideal!!!!!!
+          //also runing into a 'key' issue again, although i don't see how
+        }
 
         <BeerForm />
       </div>
