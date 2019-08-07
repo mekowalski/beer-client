@@ -124,3 +124,8 @@
   - add onChange/onSubmit handler in beerFormData
   - function for handler
   - right now the handler isn't logging anything(handler does log when i type in the input fields)
+
+
+- Dispatch will pass the Action object to the Reducers, that will run into the reducer function switch statement, and then the Store will be updated
+- Fundamental Redux flow
+  - Action Creator ---> Action ---> Dispatch ---> Reducers ---> Store

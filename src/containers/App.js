@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div style={{ textAlign: 'center' }}>
-        <Beers beers={this.state.beers}/>
+        <Beers beers={this.state.beers} />
       </div>
     )
   }
