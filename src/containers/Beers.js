@@ -34,10 +34,10 @@ class Beers extends React.Component {
 
 //mapStateToProps here!
 const mapStateToProps = (state) => {
-  return ({
+  return {
     //subscribed to state.beers, when state changes, the change is now present in application
     beers: state.beers
-  })
+  }
 }
 
 export default connect(mapStateToProps, { getBeers })(Beers)
