@@ -1,15 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { updateBeerFormData } from '../actions/beerFormData'
+
 class BeerForm extends React.Component{
 
   handleOnChange = (event) => {
     const { name, value } = event.target
     //call on function to actually update the form with new beer
-    const currentBeer = Object.assign({}, this.props.beerFormData, {
+    //update the name with the value
+    const currentBeerData = Object.assign({}, this.props.beerFormData, {
       [name]: value
     })
-    this.props.updateBeer(currentBeer)
+    this.props.updateBeerFormData(currentBeerData)
   }
 
   render() {
@@ -51,4 +54,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(BeerForm)
+export default connect(mapStateToProps, { updateBeerFormData })(BeerForm)
